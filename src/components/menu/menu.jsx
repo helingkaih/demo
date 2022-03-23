@@ -43,9 +43,9 @@ function Menu(props) {
      * @param {*} index 
      */
     function to(path, index) {
-        // 有这个参数说明是点击父路由，转换成改父路由下的第一个子路由
+        // 有这个参数说明是点击父路由，转换成该父路由下的第一个子路由
         if (index) {
-            // 这里 +1 是因为 0 被判断为 false
+            // 这里 -1 是因为 0 被判断为 false,所以 index 之前都 +1 了
             path = menuList[index - 1].child[0].path;
         }
         props.history.push(path);
