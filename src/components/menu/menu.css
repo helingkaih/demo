@@ -1,0 +1,68 @@
+/* menu 组件基本样式 */
+.menu-main{
+    height: 100%;
+    background-image: linear-gradient(-59deg,#214b63,#1b465f);
+    width: 112px;
+    transition: width 0.5s;
+}
+
+/* 组件收起样式 */
+.menu-hidden{
+    width: 0px;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+/* 菜单栏样式 */
+.menu-main ul{
+    margin: 0;
+    padding: 0;
+}
+.menu-main .fatherRoute{
+    list-style: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 36px;
+    padding: 20px;
+    white-space:nowrap;
+    position: relative;
+    cursor: pointer;
+}
+.menu-main .childRoute{
+    list-style: none;
+    padding: 0 20px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    white-space:nowrap;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.menu-main li:hover{
+    background: #267580;
+    transition: background 0.5s;
+}
+.menu-main li .subMenu{
+    position: absolute;
+    right: -80px;
+    z-index: 10;
+    top: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 12px 0 #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.menu-main li .show{
+    opacity: 1;
+    visibility:unset;
+}
+.activeRoute{
+    background: #267580 ;
+}

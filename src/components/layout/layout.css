@@ -1,0 +1,16 @@
+.layout-main{
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+}
+.layout-main .right{
+    flex-grow: 1;
+    background-color: #ecf0f5;
+}
+
+.layout-main .main-content{
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 100%;
+}

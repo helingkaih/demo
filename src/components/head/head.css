@@ -1,0 +1,14 @@
+/* 头组件基本样式 */
+.head-main{
+    background-image: linear-gradient(-225deg, #428e9a 0%, #4f7a98 48%, #3da4a9 100%);
+    height: 50px;
+}
+
+/* 展开收起按钮 */
+.head-main .icon{
+    font-size: 25px;
+    line-height: 50px;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+}
